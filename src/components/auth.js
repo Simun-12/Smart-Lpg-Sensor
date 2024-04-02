@@ -2,7 +2,7 @@ import { auth, googleProvider } from "../config/firebase-config";
 import { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup , signOut } from "firebase/auth";
 import "./auth.css"
-
+import { useHistory } from "react-router-dom";
 
 export const Auth = () => {
   const [email, setEmail] = useState("");
